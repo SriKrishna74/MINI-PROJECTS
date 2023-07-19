@@ -39,7 +39,7 @@ Then, click "OK."
 Go to "Tools" > "Board" > "Boards Manager." Search for "esp32" and install the "esp32" board package by Espressif Systems.
 
 5. Select ESP32-CAM Board:
-After installing the ESP32 board package, go to "Tools" > "Board" and select the appropriate ESP32 board. For the ESP32-CAM, you might find options like "AI Thinker ESP32-CAM" or "ESP32 Wrover Module." You can choose the one that matches your board.
+After installing the ESP32 board package, go to "Tools" > "Board" and select the appropriate ESP32 board. For the ESP32-CAM, you might find options like "AI Thinker ESP32-CAM" or "ESP32 Wrover Module." You can choose the one that matches your board..
 
 6. Connect ESP32-CAM to Computer:
 Connect the ESP32-CAM to your computer using a USB-to-Serial converter. Connect the correct pins (e.g., GND, 5V, TX, RX) between the ESP32-CAM and the USB-to-Serial converter.
