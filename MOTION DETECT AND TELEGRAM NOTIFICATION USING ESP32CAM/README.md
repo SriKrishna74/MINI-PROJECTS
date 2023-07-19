@@ -65,9 +65,9 @@ The circuit described below connects a PIR (Passive Infrared) sensor to IO13 of 
 ## Components Used
 
 1.ESP32-CAM module
-2.PIR (Passive Infrared) motion sensor
-3.Arduino Uno
-4.Jumper wires
+2. PIR (Passive Infrared) motion sensor
+3. Arduino Uno
+4. Jumper wires
 
 ## Circuit Connections
 
@@ -97,10 +97,15 @@ Note: When powering the ESP32-CAM with an external power source (e.g., USB cable
 
 Step 1: Create a Telegram Bot
 
-1. Open the Telegram app and search for the "BotFather" bot. ![image](https://github.com/SriKrishna74/MINI-PROJECTS/assets/127392900/80be24ba-8bec-4d80-b97c-5efee5ce1534)
-2. Start a chat with BotFather and send the command "/newbot" to create a new bot.
-3. Follow the instructions from BotFather, provide a name for your bot (e.g., "MyMotionBot"), and choose a username (e.g., "@MyMotionBot_username").
-4. Once your bot is created, BotFather will provide you with an API token. Save this token as you will need it in your code to interact with the Telegram API.
+1. Open the Telegram app and search for the "BotFather" bot.
+2. ![image](https://github.com/SriKrishna74/MINI-PROJECTS/assets/127392900/80be24ba-8bec-4d80-b97c-5efee5ce1534)
+3. Start a chat with BotFather and send the command "/newbot" to create a new bot.
+4. ![image](https://github.com/SriKrishna74/MINI-PROJECTS/assets/127392900/0e9b1ba7-e844-4223-94ef-7df03e1407ed)
+
+5. Follow the instructions from BotFather, provide a name for your bot (e.g., "MyMotionBot"), and choose a username (e.g., "@MyMotionBot_username").
+6. ![image](https://github.com/SriKrishna74/MINI-PROJECTS/assets/127392900/de5cc838-a247-4794-9895-34194d0835f5)
+
+7. Once your bot is created, BotFather will provide you with an API token. Save this token as you will need it in your code to interact with the Telegram API.
 
 Step 2: Replace Variables in Your ESP32-CAM Code
 In your ESP32-CAM code, you will need to replace certain variables with your specific values:
