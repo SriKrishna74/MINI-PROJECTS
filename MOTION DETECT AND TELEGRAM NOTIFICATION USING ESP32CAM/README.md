@@ -93,5 +93,45 @@ The ESP32-CAM is powered using the 5V output from the Arduino Uno. This setup en
 
 Note: When powering the ESP32-CAM with an external power source (e.g., USB cable connected to a power adapter), make sure to provide an adequate power supply to meet the power requirements of the ESP32-CAM and the camera module. Using an Arduino Uno to power the ESP32-CAM is suitable for testing and prototyping purposes, but for long-term or standalone deployment, a dedicated and sufficient power supply for the ESP32-CAM is recommended.
 
+## To create a Telegram bot and integrate it into your ESP32-CAM project, follow these steps
+
+Step 1: Create a Telegram Bot
+
+1. Open the Telegram app and search for the "BotFather" bot. ![image](https://github.com/SriKrishna74/MINI-PROJECTS/assets/127392900/80be24ba-8bec-4d80-b97c-5efee5ce1534)
+2. Start a chat with BotFather and send the command "/newbot" to create a new bot.
+3. Follow the instructions from BotFather, provide a name for your bot (e.g., "MyMotionBot"), and choose a username (e.g., "@MyMotionBot_username").
+4. Once your bot is created, BotFather will provide you with an API token. Save this token as you will need it in your code to interact with the Telegram API.
+
+Step 2: Replace Variables in Your ESP32-CAM Code
+In your ESP32-CAM code, you will need to replace certain variables with your specific values:
+
+1. Replace your_WIFI_SSID with the name of your Wi-Fi network (e.g., "MyWiFiNetwork").
+2. Replace your_WIFI_PASSWORD with the password for your Wi-Fi network.
+3. Replace your_TELEGRAM_BOT_TOKEN with the API token provided by BotFather for your Telegram bot.
+4. Replace your_TELEGRAM_CHAT_ID with your Telegram user or chat ID. To find your chat ID, you can use the following method:
+5. Temporarily comment out the lines related to sending Telegram messages and capturing images in your code.
+6. Upload the code to your ESP32-CAM.
+7. Open the Serial Monitor in the Arduino IDE and set the baud rate to 115200.
+8. Look for the line that says "Connecting to Wi-Fi..." in the Serial Monitor.
+9. Once connected to Wi-Fi, the ESP32-CAM will print the IP address and the message "Ready." Your Telegram chat ID will be displayed as well. It will look something like "-123456789".
+10. Could you copy this chat ID and use it in your code?
+Note: For security reasons, it's essential to avoid hardcoding sensitive information (e.g., Wi-Fi credentials, Telegram API token) directly in the code. You can store this information in a separate configuration file or use other methods (e.g., EEPROM) to retrieve it securely.
+
+Step 3: Uncomment the Relevant Lines in Your Code
+After replacing the variables, uncomment the lines related to sending Telegram messages and capturing images in your code. These lines were temporarily commented out during the process of finding the Telegram chat ID.
+
+Step 4: Upload the Code to ESP32-CAM
+Compile and upload the modified code to your ESP32-CAM using the Arduino IDE.
+
+Step 5: Test the Motion Detection System
+Power on your ESP32-CAM and the PIR sensor. When the PIR sensor detects motion, the ESP32-CAM should capture an image and send a Telegram notification to your Telegram account with the captured image as evidence of the intrusion.
+
+Remember to test your system thoroughly and ensure it works as expected. Also, be mindful of privacy and security considerations, especially when capturing images of people or private areas. Always comply with local laws and regulations related to surveillance and privacy.
+
+
+
+
+
+
 
    
