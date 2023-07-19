@@ -1,2 +1,2 @@
 # MINI-PROJECTS
-Hi, In this Repository  I have attached my mini projects done by me
+Hi, In this Repository  I have attached my mini projects.
